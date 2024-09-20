@@ -3,7 +3,12 @@ services:
     build:
       context: .
       args:
-        STUDENT_NAME: "Agus Setiawan"
-        STUDENT_NIM: "00000012345"
+        STUDENT_NAME: "Muhammad Affransyah Bayulaksana"
+        STUDENT_NIM: "00000077007"
     ports:
-      # TODO
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/use/src/app
+    command: "npm run dev"
