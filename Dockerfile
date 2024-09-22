@@ -22,7 +22,7 @@ RUN npm install
 COPY . .
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 80
 
 # Build the Nuxt.js application (can be skipped if running in dev mode)
 RUN npm run build
