@@ -6,7 +6,7 @@ services:
         STUDENT_NAME: "Muhammad Affransyah Bayulaksana"
         STUDENT_NIM: "00000077007"
     ports:
-      - "3000:3000"
+      - "80:3000"
     environment:
       NODE_ENV: development
     volumes:
